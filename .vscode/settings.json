@@ -1,14 +1,5 @@
 {
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue",
-    "typescript",
-    "typescriptreact"
-  ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.formatOnPaste": true
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }

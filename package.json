@@ -43,9 +43,5 @@
     "eslint-config-alloy": "^3.5.0",
     "eslint-plugin-react": "^7.17.0",
     "prettier": "^1.19.1"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
   }
 }
