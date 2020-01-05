@@ -1,26 +1,25 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
+import * as com from 'antd-mobile'
 
-const a = 'v'
+console.log(com.Button)
 
 const App = () => {
+  const Abc = com.Button
+  const Hello = () => {
+    return <Abc>123456</Abc>
+  }
+
+  const element = React.createElement(Hello, { className: 'greeting' }, 'Hello, world!')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {element}
+      {/* <Hello /> */}
+      <com.WhiteSpace />
+      <com.WingBlank>
+        <Abc>123</Abc>
+      </com.WingBlank>
     </div>
   )
 }
