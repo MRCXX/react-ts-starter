@@ -5,16 +5,21 @@ import * as com from 'antd-mobile'
 console.log(com.Button)
 
 const App = () => {
-  const Abc = com.Button
+  const Abc: React.ComponentClass = com.Button
+  // const Abc: React.Component = com.Button
   const Hello = () => {
-    return <Abc>123456</Abc>
+    return <com.Button>123456</com.Button>
   }
-
-  const element = React.createElement(Hello, { className: 'greeting' }, 'Hello, world!')
+  // function Welcome(props: any) {
+  //   return <h1>Hello, {props.name}</h1>
+  // }
+  const element = React.createElement(React.Fragment, {}, [Hello()])
+  const element2 = React.createElement(Abc, {}, 'hehe')
 
   return (
     <div className="App">
       {element}
+      {element2}
       {/* <Hello /> */}
       <com.WhiteSpace />
       <com.WingBlank>
