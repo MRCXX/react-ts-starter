@@ -17,8 +17,8 @@ const data = [
   }
 ]
 
-const render = function(): [] {
-  let elements = []
+const render = function(): React.ReactElement[] {
+  let elements: React.ReactElement[] = []
   data.forEach((elementObj: object) => {
     const com: React.ComponentClass = antd['Button']
     const element = React.createElement(com, {}, 'hehe')
